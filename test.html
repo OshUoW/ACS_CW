@@ -1,85 +1,75 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
 body {
-
-    /* Default styles for larger screens */
+    /* Existing CSS Styles */
     font-size: 16px;
     line-height: 1.6;
     padding: 0;
     margin: 0;
-
-
     font-family: 'Poppins', sans-serif;
     background: #fff;
-
-  
     background-image: url('without middle.png');
-
-    
     background-size: cover;
-
-    /* Center the background image */
     background-position: center;
-
-    /* Do not repeat the image */
     background-repeat: no-repeat;
-
-    /* Fixed in the viewport so that it doesn't move when the content's height is greater than the image's height */
     background-attachment: fixed;
-
-    /* Ensure the content has a minimum height to cover full screen */
     min-height: 100vh;
     opacity: 1;
+   
 
-
-    /* Additional styles to ensure the text stands out over the background image */
-    color: black;
-    /* text-shadow: 1px 1px 2px black; */
-
-    /* Centering Styles */
+    /* New Flexbox Centering Styles */
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-  }
-  
-  header {
+header {
     position: relative;
-  }
-  
-  header.fixed-top {
+}
+
+header.fixed-top {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-  }
-  
-  .logo {
+}
+
+.logo {
     display: inline-block;
     padding: 10px;
     left: 200px;
-  }
-  
-  .logo img {
+}
+
+.logo img {
     max-height: 80px;
     margin-left: 50px;
     vertical-align: middle;
-  }
-  
-  nav {
+}
+
+nav {
     background-color: #ffffff;
     border-bottom: 3px solid green;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     float: right;
     display: flex;
     margin: 0;
     padding: 0;
     padding-top: 18px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #077245;
     text-decoration: none;
     padding: 12px 40px;
@@ -88,59 +78,67 @@ body {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 2px;
-  }
-  
-  nav ul li a:hover {
-    color: rgb(52, 71, 55);
+}
+
+nav ul li a:hover {
+    color: white;
     background: #3ce41b;
     border-radius: 100px;
     transition: 0.2s;
-  }
-  
-  /* For Smaller screens (tablets) */
-  @media (max-width: 768px) {
+}
+
+/* For Smaller screens (tablets) */
+@media (max-width: 768px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
     .logo {
-      left: 20px; /* Adjust positioning on smaller screens */
+        left: 20px;
     }
     nav ul {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-      padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
     }
     nav ul li a {
-      padding: 8px 20px;
-      font-size: 18px;
+        padding: 8px 20px;
+        font-size: 18px;
     }
-  }
-  
-  /* For Extra small screens (phones) */
-  @media (max-width: 576px) {
+}
+
+/* For Extra small screens (phones) */
+@media (max-width: 576px) {
     body {
-      font-size: 12px;
+        font-size: 12px;
     }
     .logo img {
-      max-height: 50px; /* Smaller logo on phones */
-      margin-left: 0;
+        max-height: 50px;
+        margin-left: 0;
     }
     nav ul {
-      padding-top: 5px;
+        padding-top: 5px;
     }
     nav ul li a {
-      padding: 6px 15px;
-      font-size: 16px;
+        padding: 6px 15px;
+        font-size: 16px;
     }
+}
 
-  }
-
-  .section1{
+div {
     width: 600px;
     height: 200px;
     padding: 15px;
     background-color: #a5d6b1;
     box-shadow: 10px 10px 5px green;
     border-radius: 15px;
-  }
-  
+}
+</style>
+</head>
+<body>
+
+<div>A div element with a 5px blurred, lightblue box-shadow.</div>
+
+</body>
+</html>
+
+</html>
