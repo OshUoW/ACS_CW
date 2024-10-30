@@ -135,17 +135,17 @@ body {
 
   }
 
-  /* .section1{
+  .section1{
     width: 600px;
     height: 200px;
     padding: 15px;
     background-color: #a5d6b1;
     box-shadow: 10px 10px 5px green;
     border-radius: 15px;
-  } */
+  }
 
 
-  /* Header image styles */
+  /* Header image styles
  .head-image{
     position: fixed;
     margin-top: 140px;
@@ -157,4 +157,4 @@ body {
     height: auto;
     display: block;
     border-radius: 50px;
- }
+ } */
