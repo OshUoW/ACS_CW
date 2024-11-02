@@ -6,6 +6,7 @@ body {
     line-height: 1.6;
     padding: 0;
     margin: 0;
+    
 
 
     font-family: 'Poppins', sans-serif;
@@ -124,6 +125,7 @@ body {
    }
 
 
+
   }
   
   .section1{
@@ -150,45 +152,45 @@ body {
 
  h1{
   color: #136D13;
-	padding-top: 100px;
+	padding-top: 0px;
   padding-bottom: 20px;
 	text-align: center;
 	font-size: 50px;
-	font-weight: 100;
+	font-weight: bold;
  }
 
  h3 {
   font-size: 25px;
-  padding-bottom: 10px;
+
 }
 
 .main_container{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  
 }
 
 hr{
-  width: 100%;
+  width: 200%;
   height: 3px;
-  color: #077245;
+  background-color: #077245;
 }
 
-h1{
+/* h1{
   width: 50%;
-}
+} */
 
 
 .container {
   display: inline;
   max-width: 80vw;
-  height: 200px;
-  margin-top: 160px;
-  padding: 20px;
+  height: 300px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
-  border: 3px solid #ddd;
+  
 }
 
 .item {
@@ -198,14 +200,14 @@ h1{
   margin: 30px auto;
   vertical-align: middle;
   border-radius: 20px;
-  border: 3px solid #ddd;
+  border: 3px solid green;
 }
 
 .item img {
   margin-top: 2.5%;
   margin-left: 3%;
-  width : 30%;
-  height: 80%;
+  width : 40%;
+  height: 90%;
   border-radius: 30px;
   transition: ease-in-out 0.3s;
 }
@@ -218,5 +220,32 @@ transform: scale(1.1);
   margin-top: 70px;
   margin-left: 30px;
   text-align: left;
+}
+
+
+
+.description {
+	background-color: #2b976a;
+}
+
+.description h1 {
+	font-size: 54px;
+	margin-top: 40px;
+	padding-top: 40px;
+	text-align: center;
+  justify-content: center;
+  color: white;
+  /* padding-left: 300px; */
+}
+
+.description p {
+	margin-bottom: 20px;
+	font-size: 24px;
+	padding-top: 40px;
+	text-align: center;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+	
 }
 
