@@ -1,4 +1,4 @@
-
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap);
 body {
 
     /* Default styles for larger screens */
@@ -98,27 +98,34 @@ body {
       padding: 8px 20px;
       font-size: 18px;
     }
+
+    .section1{
+      width: 600px;
+      height: 200px;
+      padding: 15px;
+      background-color: #a5d6b1;
+      box-shadow: 10px 10px 5px green;
+      border-radius: 15px;
+    }
+  
+  
+  
+   .head-image{
+      position: fixed;
+      margin-top: 140px;
+      margin-left: 20px;
+   } 
+  
+   .head-image img{
+      width:100%;
+      height: auto;
+      display: block;
+      border-radius: 50px;
+   }
+
+
   }
   
-  /* For Extra small screens (phones) */
-  @media (max-width: 576px) {
-    body {
-      font-size: 12px;
-    }
-    .logo img {
-      max-height: 50px; /* Smaller logo on phones */
-      margin-left: 0;
-    }
-    nav ul {
-      padding-top: 5px;
-    }
-    nav ul li a {
-      padding: 6px 15px;
-      font-size: 16px;
-    }
-
-  }
-
   .section1{
     width: 600px;
     height: 200px;
@@ -128,8 +135,6 @@ body {
     border-radius: 15px;
   }
 
-
-  Header image styles
  .head-image{
     position: fixed;
     margin-top: 140px;
@@ -142,3 +147,76 @@ body {
     display: block;
     border-radius: 50px;
  }
+
+ h1{
+  color: #136D13;
+	padding-top: 100px;
+  padding-bottom: 20px;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 100;
+ }
+
+ h3 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr{
+  width: 100%;
+  height: 3px;
+  color: #077245;
+}
+
+h1{
+  width: 50%;
+}
+
+
+.container {
+  display: inline;
+  max-width: 80vw;
+  height: 200px;
+  margin-top: 160px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  border: 3px solid #ddd;
+}
+
+.item {
+  display: flex;
+  width: 70%;
+  height: 300px;
+  margin: 30px auto;
+  vertical-align: middle;
+  border-radius: 20px;
+  border: 3px solid #ddd;
+}
+
+.item img {
+  margin-top: 2.5%;
+  margin-left: 3%;
+  width : 30%;
+  height: 80%;
+  border-radius: 30px;
+  transition: ease-in-out 0.3s;
+}
+
+.item img:hover {
+transform: scale(1.1);
+}
+.item-info{
+  font-size: 17px;
+  margin-top: 70px;
+  margin-left: 30px;
+  text-align: left;
+}
+
