@@ -178,9 +178,6 @@ hr{
   background-color: #077245;
 }
 
-/* h1{
-  width: 50%;
-} */
 
 
 .container {
@@ -235,7 +232,6 @@ transform: scale(1.1);
 	text-align: center;
   justify-content: center;
   color: white;
-  /* padding-left: 300px; */
 }
 
 .description p {
