@@ -20,6 +20,7 @@
                 <li> <a href="Home.html"> HOME </a> </li>
                 <li> <a href="Blog.html" class="active"> Blog </a> </li>
                 <li> <a href="About us.html"> About Us </a> </li>
+                <li> <a href="Contact.html"> Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -36,6 +37,8 @@
             <img src="blog1.jpg" alt="">
             <div class="item-info">
                 <h3> Essential Concepts in Web Development</h3>
+                <time datetime="2023-09-20">September 20, 2023</time>
+                <br>
                 Master essential skills in building modern, visually appealing websites that work seamlessly across
                 different devices.
             </div>
@@ -44,6 +47,8 @@
             <img src="blog2.png" alt="">
             <div class="item-info">
                 <h3> Essential Tips for Optimizing Your Web Pages</h3>
+                <time datetime="2023-10-15">October 15, 2023</time>
+                <br>
                 Boost your website's visibility with effective SEO strategies. Learn keyword research, on-page
                 techniques, and more in this guide.
             </div>
@@ -61,38 +66,43 @@
             <div class="item-info">
 
                 <h3> Essential Concepts in Web Development</h3>
-                Web development today emphasizes structure, design, and responsiveness. Key concepts like HTML5 semantic
-                elements, responsive design, Flexbox, CSS specificity, and gradients
-                are crucial for building efficient and visually engaging websites.
-                <br>
-                <br>
+                <p id="blog">
+                    Web development today emphasizes structure, design, and responsiveness. Key concepts like HTML5
+                    semantic
+                    elements, responsive design, Flexbox, CSS specificity, and gradients
+                    are crucial for building efficient and visually engaging websites.
+                    <br>
+                    <br>
 
-                Semantic elements in HTML5 are tags that add meaning to the structure of a webpage, making it more
-                understandable for both developers and browsers. They enhance accessibility, SEO, and readability by
-                defining specific sections of a webpage.
-                For instance, elements like "header", "main", and "footer" each serve a unique purpose. "header"
-                generally includes introductory content or navigation links, "main" represents the central content of
-                the page, and "footer" often holds author information or legal notices.
-                <br>
-                <br>
-                Responsive design ensures that web pages adjust smoothly across different screen sizes and devices,
-                providing a consistent user experience on desktops, tablets, and smartphones. This adaptability is
-                crucial in modern web development, improving usability and accessibility for all users.
-                Key components in responsive design include fluid grids and flexible images that scale according to
-                screen dimensions, as well as media queries. Media queries in CSS allow developers to apply different
-                styles based on specific conditions, like viewport width.
-                <br>
-                <br>
-                The Flexbox layout module in CSS allows for arranging items within a container in a flexible,
-                predictable manner. Key Flexbox properties include `flex-direction`, `wrap`, `order`, and `basis`.
-                flex-direction defines the main axis, such as row or column, wrap controls whether items wrap onto
-                multiple lines, order specifies the display order of items and
-                `basis` defines the initial size of items.
-                <br>
-                <br>
-                CSS specificity determines which styles apply to an element when multiple selectors target it.
-                Specificity values are calculated based on selector type: inline styles are the most specific, followed
-                by IDs, classes, and finally, element selectors. For instance:
+                    Semantic elements in HTML5 are tags that add meaning to the structure of a webpage, making it more
+                    understandable for both developers and browsers. They enhance accessibility, SEO, and readability by
+                    defining specific sections of a webpage.
+                    For instance, elements like "header", "main", and "footer" each serve a unique purpose. "header"
+                    generally includes introductory content or navigation links, "main" represents the central content
+                    of
+                    the page, and "footer" often holds author information or legal notices.
+                    <br>
+                    <br>
+                    Responsive design ensures that web pages adjust smoothly across different screen sizes and devices,
+                    providing a consistent user experience on desktops, tablets, and smartphones. This adaptability is
+                    crucial in modern web development, improving usability and accessibility for all users.
+                    Key components in responsive design include fluid grids and flexible images that scale according to
+                    screen dimensions, as well as media queries. Media queries in CSS allow developers to apply
+                    different
+                    styles based on specific conditions, like viewport width.
+                    <br>
+                    <br>
+                    The Flexbox layout module in CSS allows for arranging items within a container in a flexible,
+                    predictable manner. Key Flexbox properties include `flex-direction`, `wrap`, `order`, and `basis`.
+                    flex-direction defines the main axis, such as row or column, wrap controls whether items wrap onto
+                    multiple lines, order specifies the display order of items and
+                    `basis` defines the initial size of items.
+                    <br>
+                    <br>
+                    CSS specificity determines which styles apply to an element when multiple selectors target it.
+                    Specificity values are calculated based on selector type: inline styles are the most specific,
+                    followed
+                    by IDs, classes, and finally, element selectors. For instance:
                 <ul>
                     <li>`".header .nav-item"` has a specificity of 0-0-2-0.</li>
                     <li> `"#main-content .article h1"` has a specificity of 0-1-1-1.</li>
@@ -115,6 +125,8 @@
                 By mastering these foundational techniques and understanding their applications, developers can build
                 web pages that are functional, visually appealing, and adaptable across various devices and screen
                 sizes.
+                </p>
+
 
             </div>
         </div>
@@ -135,7 +147,7 @@
         <div class="item">
             <div class="item-info">
                 <h3>How to Optimize Your Webpages?</h3>
-                <p>
+                <p id="blog">
                     In today's digital landscape, Search Engine Optimization (SEO) is the key to making your website
                     stand out. SEO helps improve your site's visibility in search results, driving organic traffic, and
                     boosting engagement. Let’s dive into some foundational strategies and best practices to make your
@@ -185,21 +197,22 @@
         </div>
 
     </div>
-
-    <!-- footer section -->
-    <footer class="site-footer">
-        <h3>©  2024 Ayura by OJ</h3>
+    <!-- 
+    footer section -->
+    <!-- <footer class="site-footer">
+        <h3>© 2024 Ayura by OJ</h3>
         <p> A personal brand dedicated to innovative front-end development and
-            <br> tailored web solutions that enhance user experiences and drive digital engagement.</p>
-            <br>
-            <!-- <hr> -->
-        <ul>   
-             
-            <li>  <a href="https://www.facebook.com/" class="fa fa-facebook"></a> </li>  
-        </ul>  
-        
+            <br> tailored web solutions that enhance user experiences and drive digital engagement.
+        </p>
+        <br>
+        <hr>
+        <ul>
+
+            <li> <a href="https://www.facebook.com/" class="fa fa-facebook"></a> </li>
+        </ul>
+
         <p>Designed By: <a href=" " target="_blank" style="color: rgba(72, 255, 0, 0.568);">Oshani Jayawardena</a></p>
-    </footer>
+    </footer> -->
 
 
 
