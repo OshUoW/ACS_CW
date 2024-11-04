@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact </title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!-- navigation bar -->
     <header class="fixed-top">
         <nav>
             <div class="logo">
-                <a href="home.html"> <img src="logo.png" alt="Ayura Logo"> </a>
+                <a href="home.html"> <img class="logo" src="logo.png" alt="Ayura Logo"> </a>
             </div>
-            <ul>
+            <input type="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul id="nav-links">
                 <li> <a href="Home.html"> HOME </a> </li>
                 <li> <a href="Blog.html" class="active"> Blog </a> </li>
-                <li> <a href="About Me.html"> About Me </a> </li>
+                <li> <a href="AboutMe.html"> About Me </a> </li>
                 <li> <a href="Contact.html"> Contact Me</a></li>
+                
             </ul>
         </nav>
     </header>
@@ -29,61 +37,62 @@
         <hr>
     </div>
 
-  
-    <form id="formid" action="mailto:oshanidjayawardana@gmail.com" method="post" enctype="text/plain" >
-        <fieldset class="feedback_container">
-            
-            <fieldset class="personal-details">
-                <legend><h3>Please enter your details</h3></legend>
-                <div class ="personal-info">
-                    <div class="first-name">
-                        <label for="first_name">First Name</label><br>
-                        <input type="text" name="name" id="name" required><br>
+    <div class="contactpage">
+        <form id="formid" action="mailto:oshanidjayawardana@gmail.com" method="post" enctype="text/plain">
+            <fieldset class="feedback_container">
+
+                <fieldset class="personal-details">
+                    <legend>
+                        <h3>Please enter your details</h3>
+                    </legend>
+                    <div class="personal-info">
+                        <div class="first-name">
+                            <label for="first_name">First Name</label><br>
+                            <input type="text" name="name" id="name" required><br>
+                        </div>
+
+                        <div class="last-name">
+                            <label for="last_name">Last Name</label><br>
+                            <input type="text" name="name" id="name" required><br>
+                        </div>
+
+                        <div class="fb-email">
+                            <label for="email">Email</label><br>
+                            <Input type="email" name="email" id="email" required><br>
+                        </div>
+
+                        <div class="fb-number">
+                            <label for="phone">Phone Number</label><br>
+                            <input type="tel" name="phone" id="phone" maxlength="10" placeholder="Enter 10 digit number"
+                                required>
+
+                        </div>
+
+                        <div class="Message">
+                            <label for="Message">Your Message</label><br>
+                            <input type="text" name="message" id="message" required><br>
+                        </div>
+                        <br>
+                        <button class="submit" type="submit"> Submit </button>
+
+
                     </div>
-
-                    <div class="last-name">
-                        <label for="last_name">Last Name</label><br>
-                        <input type="text" name="name" id="name" required><br>
-                    </div>
-
-                    <div class="fb-email">
-                        <label for="email">Email</label><br>
-                        <Input type="email"  name="email" id="email" required><br>
-                    </div>
-
-                    <div class="fb-number">
-                        <label for="phone">Phone Number</label><br>
-                        <input type="tel" name="phone" id="phone" maxlength="10" placeholder="Enter 10 digit number" required>
-                         
-                    </div>
-
-                    <div class="Message">
-                        <label for="Message">Enter your Message</label><br>
-                        <input type="text" name="message" id="message" required><br>
-                    </div>
-                    <br>
-                    <button class="submit" type="submit"> Submit </button>
-
-
-                </div>
+                </fieldset>
             </fieldset>
-            </fieldset>
-</form>
-
-<br>
-<footer class="site-footer">
-    <h3>©  2024 Ayura by OJ</h3>
-    <p> A personal brand dedicated to innovative front-end development and
-        <br> tailored web solutions that enhance user experiences and drive digital engagement.</p>
+        </form>
+    </div>
+    <footer class="site-footer">
+        <h3>© 2024 Ayura by OJ</h3>
+        <p> A personal brand dedicated to innovative front-end development and
+            <br> tailored web solutions that enhance user experiences and drive digital engagement.
+        </p>
         <br>
-        
-    
-    
-    <p>Designed By: <a href=" " target="_blank" style="color: rgba(72, 255, 0, 0.568);">Oshani Jayawardena</a></p>
-</footer>
 
 
-
+        <p>Designed By: <a href="AboutMe.html" target="_blank" style="color: rgba(72, 255, 0, 0.568);">Oshani
+                Jayawardena</a></p>
+    </footer>
 
 </body>
+
 </html>
