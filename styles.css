@@ -238,8 +238,8 @@ homesection{
 /* text shadow with blog to the main title in each page */
 h1 {
   color: #136D13;
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
