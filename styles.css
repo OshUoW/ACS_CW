@@ -131,6 +131,20 @@ nav ul li a:hover {
 
 }
 
+.head-image { 
+	margin-top: 140px;
+	margin-left: 20px;
+  }
+
+.head-image img {
+
+	width: 99%;        
+	height: auto;    
+	display: block;     
+	border-radius: 50px;
+}
+
+
 homesection{
   padding-top: 100px;
 }
