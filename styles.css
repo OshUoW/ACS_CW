@@ -62,6 +62,14 @@ nav {
   border-bottom: 3px solid green;
 }
 
+/* negation with structural selector*/
+nav ul li:not(:first-child) a { 
+  color: #3ce41b;
+  font-weight: bold;
+}
+
+
+
 /* relational selector */
 nav ul {
   list-style: none;
@@ -131,7 +139,10 @@ nav ul li a:hover {
 
 }
 
-.head-image { 
+/* Home page styling */
+
+/* child combinator */
+body > .head-image { 
 	margin-top: 140px;
 	margin-left: 20px;
   }
@@ -149,6 +160,7 @@ homesection{
   padding-top: 100px;
 }
 
+/* text shadow with blog to the main title in each page */
 h1 {
   color: #136D13;
   padding-top: 0px;
@@ -156,6 +168,8 @@ h1 {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
+  text-shadow: 2px 2px black;
+  
 }
 
 h3 {
@@ -163,7 +177,49 @@ h3 {
 
 }
 
+.social-media {
+  display: flex;
+  gap: 50px; /* Space between icons */
+}
 
+.fa {
+  padding: 25px;
+  font: size 50px ;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%; 
+  transition: opacity 0.3s; 
+}
+
+.fa-facebook {
+  background:#136D13;
+  color: white;
+  margin: 20;
+}
+
+.fa-instagram {
+  background:#2b976a;
+  color: white;
+}
+
+.fa-youtube {
+  background:#3ce41b;
+  color:black;
+}
+
+.fa:hover {
+  opacity: 0.7; 
+}
+
+
+/* negation pseudo class */
+
+img:not(.logo):not(.head_image):hover  {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
 
 /* BLOG PAGE STYLES */
 
@@ -172,8 +228,6 @@ h3 {
   justify-content: center;
   align-items: center;
   padding-top: 65px;
-
-
 }
 
 hr {
@@ -182,8 +236,6 @@ hr {
   background-color: #077245;
 }
 
-
-
 .container {
   display: inline;
   max-width: 80vw;
@@ -191,6 +243,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
+  flex: 1;
 
 }
 
@@ -228,10 +281,12 @@ hr {
 }
 
 .description {
-  background-color: #2b976a;
+  /* gradient color */
+  background-image: linear-gradient(to right,#077245,#3ce41b);
 }
 
-.description h1 {
+/* child combinator */
+.description > h1 {
   font-size: 54px;
   margin-top: 40px;
   padding-top: 40px;
@@ -257,9 +312,7 @@ hr {
   font-size: 3em;
 }
 
-
-
-
+/* Contact me page styling */
 .personal-info {
   width: 350px;
   margin-left: 100px;
@@ -268,7 +321,6 @@ hr {
   font-weight: bold;
 
 }
-
 
 /* Increase the width of all text input fields */
 input[type="text"],
@@ -293,6 +345,12 @@ input[type="tel"] {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /*box shadow to enhance the submit button*/
+  transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.submit:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.9); /* Even stronger shadow on hover */
 }
 
 
@@ -309,15 +367,17 @@ section {
   justify-content: center;
 }
 
+/* Linear gradient with semi transparent green for the background */
 article {
   margin-bottom: 20px;
+  background-image: linear-gradient(to left,#077245,rgba(60, 228, 27, 0.5));
   padding: 15px;
   border: 3px solid greenyellow;
   border-radius: 5px;
   background-color: #f9f9f9;
   align-items: center;
   justify-content: center;
-  box-shadow: 100pc #2b976a;
+  
 }
 
 #me {
@@ -329,8 +389,9 @@ article {
 
 }
 
+/* box shadow style used when hovered */
 #me:hover {
-  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  box-shadow: 0 0 2px 1px rgba(186, 0, 0, 0.7);
 }
 
 
@@ -377,23 +438,3 @@ article {
   padding-left: 10px;
 }
 
-.fa {
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  font-size: 25px;
-  width: 50px;
-  height: 50px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  background: #3B5998;
-  color: white;
-}
-
-.fa:hover {
-  opacity: 0.7;
-}
