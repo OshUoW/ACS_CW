@@ -129,45 +129,10 @@ nav ul li a:hover {
   }
 
 
-
-  .head-image {
-    position: fixed;
-    margin-top: 140px;
-    margin-left: 20px;
-  }
-
-  .head-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 50px;
-  }
-
-
-
 }
 
-.section1 {
-  width: 600px;
-  height: 200px;
-  padding: 15px;
-  background-color: #a5d6b1;
-  box-shadow: 10px 10px 5px green;
-  border-radius: 15px;
-}
-
-.head-image {
-  position: fixed;
-  margin-top: 140px;
-  margin-left: 20px;
-}
-
-.head-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  /* rounded corners styling */
-  border-radius: 50px;
+homesection{
+  padding-top: 100px;
 }
 
 h1 {
@@ -281,28 +246,6 @@ hr {
 
 
 
-/* .fb-personal {
-
-	background-color: white;
-	margin-top: 30px;
-	margin-left: 500px;
-	margin-right: 500px;
-	padding: 10px;
-	border-top: 20px #000000;
-}
-
-.feedback_container {
-	border-radius: 20px;
-	padding: 20px;
-}
-
-.personal-details { 
-	padding:20px;
-	text-align: center;
-	border-radius: 10px;
-  align-items: center;
-  } */
-
 .personal-info {
   width: 350px;
   margin-left: 100px;
@@ -312,15 +255,6 @@ hr {
 
 }
 
-/* Style for valid email */
-input[type="email"]:valid {
-  border: 2px solid#3ce41b;
-}
-
-/* Style for invalid email */
-input[type="email"]:invalid {
-  border: 2px solid red;
-}
 
 /* Increase the width of all text input fields */
 input[type="text"],
@@ -348,12 +282,42 @@ input[type="tel"] {
 }
 
 
+
 #formid {
   padding-bottom: 50px;
 }
 
+/* About Me Page */
+
+section {
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 3px solid greenyellow;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 100pc #2b976a;
+}
+
+#me {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
 
 
+}
+
+#me:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
 
 
 
