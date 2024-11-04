@@ -80,14 +80,15 @@ nav ul {
   padding-top: 18px;
 }
 
+
 nav ul li a {
   color: #077245;
-  text-decoration: none;
+  text-decoration: none; /* text effects */
   padding: 12px 40px;
   line-height: 60px;
   font-size: 20px;
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: uppercase; /* text effects */
 
   /* rounded corners styling */
   border-radius: 2px;
@@ -127,14 +128,14 @@ nav ul li a:hover {
     font-size: 18px;
   }
 
-  .section1 {
+  /* .section1 {
     width: 600px;
     height: 200px;
     padding: 15px;
     background-color: #a5d6b1;
     box-shadow: 10px 10px 5px green;
     border-radius: 15px;
-  }
+  } */
 
 
 }
@@ -214,7 +215,7 @@ h3 {
 }
 
 
-/* negation pseudo class */
+/* negation pseudo class with transform*/
 
 img:not(.logo):not(.head_image):hover  {
   transform: scale(1.05);
@@ -268,7 +269,7 @@ hr {
   transition: ease-in-out 0.3s;
 }
 
-/* user action pseudo class */
+/* user action pseudo class with transform */
 .item img:hover {
   transform: scale(1.1);
 }
@@ -284,6 +285,8 @@ hr {
   /* gradient color */
   background-image: linear-gradient(to right,#077245,#3ce41b);
 }
+
+
 
 /* child combinator */
 .description > h1 {
@@ -312,6 +315,18 @@ hr {
   font-size: 3em;
 }
 
+
+/* nth child pseudo class styling */
+#blog > p:nth-child(odd) {
+  color: #136D13; 
+  font-size: 20px;
+}
+
+#blog > p:nth-child(even) {
+  color: #3ce41b; 
+  font-size: 20px;
+}
+
 /* Contact me page styling */
 .personal-info {
   width: 350px;
@@ -334,7 +349,17 @@ input[type="tel"] {
   /* Optional: adjust font size */
 }
 
-.submit{
+/* attribute selectors with valid pseudo classes and borders */
+input[type="email"]:valid {
+  border: 2px solid #3ce41b;
+}
+
+input[type="tel"]:valid {
+  border: 2px solid #3ce41b;
+}
+
+/* attribute selector */
+button[type="submit"]{
   background-color: #04AA6D;
   border: none;
   color: white;
@@ -352,8 +377,6 @@ input[type="tel"] {
 .submit:hover {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.9); /* Even stronger shadow on hover */
 }
-
-
 
 #formid {
   padding-bottom: 50px;
@@ -393,10 +416,6 @@ article {
 #me:hover {
   box-shadow: 0 0 2px 1px rgba(186, 0, 0, 0.7);
 }
-
-
-
-
 
 /* FOOTER */
 .site-footer {
